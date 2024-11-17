@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* intro_section */
+.intro{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #CCC9E7; */
+    background-color: #297373;
+    position: relative;
+}
+
+.intro h1{
+    /* color: #39393A; */
+    color: #F5FFC6;
+    font-size: clamp(3rem, 10vw, 9rem);
+    font-family: "Anton";
+    font-style: normal;
+    padding: 3rem;
+    letter-spacing: 2px;
+}
+
+.intro p{
+    font-family: "Sour Gummy";
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: #F5FFC6;
+    padding: 0 3rem;
+    text-indent: 12rem;
+}
+
+.bi{
+    font-size: 5rem;
+    color:black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px)
+{
+    .intro h1{
+        padding: 1.5rem;
+    }
+
+    .intro p{
+        text-indent: 0;
+        text-align: left;
+        padding: 0 1.5rem;
+    }
+
+    .bi{
+        font-size: 3rem;
+    }
+}
