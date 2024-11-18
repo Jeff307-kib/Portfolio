@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #fce8e6, #dee8ff);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      
+      .creative-text {
+        font-size: 10vw; /* Responsive sizing */
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 
+          3px 3px 0px #8ab4ff,  /* Shadow layers */
+          6px 6px 0px #8ab4ff;
+        letter-spacing: 5px;
+      }
+      
+      .creative-text::after {
+        content: 'CREATIVE DEVELOPER'; /* Duplicate for a 3D illusion */
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: transparent; /* Background text for outline look */
+        -webkit-text-stroke: 2px #8ab4ff;
+        z-index: -1;
+      }
+      </style>
+</head>
+<body>
+    <div class="creative-text">CREATIVE DEVELOPER</div>
+
+</body>
+</html>
